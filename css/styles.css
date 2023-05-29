@@ -87,11 +87,13 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #2F303A;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding: 200px 452px;
+    background-color: rgba(47, 48, 58);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/header-background.jpg");
 }
 
 .heading1 {
