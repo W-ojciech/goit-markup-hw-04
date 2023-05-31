@@ -15,6 +15,7 @@ body {
 .link:hover,            /* .link:active, */
 .link:focus {
     color: #2196F3;
+    cursor: pointer;
 }
 
 ul {
@@ -70,14 +71,38 @@ ul {
 
 .contacts-list {
     display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.contacts-list>li {
+    padding: 10px;
 }
 
 .contact1 {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
     color: #757575;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-left: 50px;
+    stroke: #757575;    /* zapis nie konieczny, dotyczy bazowego koloru obramowania. Naszukalem sie dziada wiec zostaje */
+    stroke-width: 2px;
+}
+.contact1:hover,
+.contact1:focus,            /* alternatywnie tedy moge sie dostac do tych ikon */
+.contact1:active {
+    background-color: #FFFFFF;
+    color: #2196F3;
+    stroke: #2196F3;
+    stroke-width: 2px;
+    stroke-opacity: 0.8;
+}
+
+.contact1>svg {
+    margin-right: 10px;
 }
 
 
@@ -88,6 +113,7 @@ ul {
     justify-content: center;
     flex-direction: column;
     max-width: 1600px;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 200px 452px;
@@ -119,6 +145,8 @@ ul {
     margin-top: 15px;
 }
 
+
+/* SECTION 1 - LIST OF ARTICLES */
 .cards-list {
     display: flex;
     justify-content: space-between;
@@ -130,11 +158,21 @@ ul {
     list-style: none;
     margin: 0 15px;
 }
-.card:nth-child(4n + 4) {
+.card:nth-child(4n+4) {
     margin-right: 0;
 }
 .card:nth-child(4n+1) {
     margin-left: 0;
+}
+
+.container-big-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 
 .article-title {
@@ -204,11 +242,62 @@ ul {
 .job {
     color: #757575;
     margin-top: 10px;
-    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.social-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;   /* zaokraglenie */
+    margin: 0 5px;
+    fill: #AFB1B8;
+    background-color: #FFFFFF;
+}
+.social-circle:hover,
+.social-circle:focus,
+.social-circle-dark:hover,
+.social-circle-dark:focus {
+    background-color:#2196F3;
+    fill: #fff;
 }
 
 
-/* SECTION PORTFOLIO*/
+/* SECTION 4 - CUSTOMERS */
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 31px;
+    margin: 0 15px;
+    border: 1px solid #AFB1B8;
+    fill: #afb1b8;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+.customer-rectangle:hover,
+.customer-rectangle:focus,
+.customer-rectangle:active {
+    fill: #2196f3;
+    border-color: #2196F3;
+    background-color: #FFFFFF;
+    stroke: #2196f3;
+    stroke-width: 1.533;
+}
+
+
+/* SECTION PORTFOLIO */
 .filters-list {
     display: flex;
     justify-content: center;
@@ -278,6 +367,29 @@ ul {
     padding: 60px 0px;
 }
 
+.footer>div {
+    max-height: 252px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.social-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.social-box>p {
+    margin: 12px 0 20px 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142857142857143;
+}
+
 address {
     margin-top: 20px;
 }
@@ -297,4 +409,20 @@ address {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6); /* bialy, 60% przezroczystosci */
     line-height: 1.714285714285714;
+}
+
+.social-circle-dark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;     /* zaokraglenie */
+    margin: 0 10px 0 0;
+    fill: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-circle-dark:hover,
+.social-circle-dark:focus {
+    background-color: #2196F3;
+    fill: #fff;
 }
