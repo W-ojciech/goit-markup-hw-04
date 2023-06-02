@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <title> GoIT modul HTML+CSS - Home work 3 </title>
+    <title> GoIT modul HTML+CSS - Home work 4 </title>
 </head>
 
 <body>
@@ -25,12 +25,26 @@
             <ul class="nav-list">
                 <li><a href="./index.html" class="link nav-page">Agencja</a></li>
                 <li><a href="./portfolio.html" class="link nav-page">Portfolio</a></li>
-                <li><a href="#" class="link nav-page">Kontakt</a></li>
+                <li><a href="./index.html#contact-address" class="link nav-page">Kontakt</a></li>
             </ul>
         </nav>
         <ul class="contacts-list">
-            <li><a href="mailto:info@devstudio.com" class="link contact1">info@devstudio.com</a></li>
-            <li><a href="tel:+48111111111" class="link contact1">+48 111 111 111</a></li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="link contact1">
+                    <svg class="icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li>
+                <a href="tel:+48111111111" class="link contact1">
+                    <svg class="icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +48 111 111 111
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -110,7 +124,7 @@
             <a href="./index.html" class="link logo">
                 Web<span class="accent2">Studio</span>
             </a>
-            <address>
+            <address id="contact-address">
                 <ul>
                     <li class="contact2">
                         <a href="https://goo.gl/maps/GoScVA1be1kBNJ3W7" target="_blank" rel="noreferrer noopener"
@@ -118,10 +132,47 @@
                             m. Warszawa, Aleje Jerozolimskie 21
                         </a>
                     </li>
-                    <li class="contact3"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li class="contact3"><a href="tel:+4793921911" class="link">+48 111 111 111</a></li>
+                    <li class="contact3">
+                        <a href="mailto:info@example.com" class="link">info@example.com</a>
+                    </li>
+                    <li class="contact3">
+                        <a href="tel:+4793921911" class="link">+48 111 111 111</a>
+                    </li>
                 </ul>
             </address>
+            <div class="social-box">
+                <p>Dołącz do nas</p>
+                <ul class="social-links">
+                    <li>
+                        <a class="social-circle-dark link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-circle-dark link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-circle-dark link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-circle-dark link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
